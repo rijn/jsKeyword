@@ -6,3 +6,8 @@
 ## Demo & Configuration
 
 [http://pixelnfinite.com/jsKeyword/](http://pixelnfinite.com/jsKeyword/) 
+
+## Screenshots
+
+![](http://pixelnfinite.com/jsKeyword/image/1.png)
+![](http://pixelnfinite.com/jsKeyword/image/2.png)
