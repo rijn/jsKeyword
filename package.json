@@ -1,0 +1,22 @@
+{
+  "name": "js-keyword",
+  "version": "1.1.2",
+  "description": "js-keyword could help you search tag in a brunch of tags",
+  "main": "jsKeyword.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://rijn@github.com/rijn/jsKeyword.git"
+  },
+  "author": "Rijn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rijn/jsKeyword/issues"
+  },
+  "homepage": "https://github.com/rijn/jsKeyword#readme",
+  "dependencies": {
+    "require": "^2.4.20"
+  }
+}

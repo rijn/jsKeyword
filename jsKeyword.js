@@ -3,19 +3,15 @@
  * Copyright pixelnfinite.com, 2015.
  */
 
-;
-function jsKeyword(opts) {
-    this.version = '1.0';
-    this.author = 'Rijn';
-    this.tree = {};
-    this.list = [];
-    this.content = [];
-};
-jsKeyword.fn = jsKeyword.prototype = {
-    init: function() {
-        "use strict";
+"use strict";
+
+module.exports = {
+    tree: {},
+    list: [],
+    content: [],
+    clear: function() {
         this.tree = {};
-        this.list = [];
+        this.list = this.content = [];
     },
     viewTree: function() {
         console.log(this.tree);
@@ -75,7 +71,7 @@ jsKeyword.fn = jsKeyword.prototype = {
             p_star = (p_flag++);
             p_end = p_star;
             match_str = "";
-            _match = false;
+            var _match = false;
             do {
                 match_key = _text.charAt(p_end);
                 if (!(_probe = _probe[match_key])) {
@@ -137,16 +133,16 @@ jsKeyword.fn = jsKeyword.prototype = {
         var _tree = this.tree;
         var _root = _tree;
         if (typeof arguments[0] === "object") {
-            _argu = arguments[0];
+            var _argu = arguments[0];
         } else {
-            _argu = arguments;
+            var _argu = arguments;
         };
         for (var j = 0; j < _argu.length; j++) {
             var _temp = _argu[j];
             var _length = _temp.length;
             var _list_temp = [];
             for (var i = 0; i < _length; i += 1) {
-                _key = _temp.charAt(i);
+                var _key = _temp.charAt(i);
                 _list_temp[_key] = 1;
                 _list_temp.length++;
                 if (_tree.hasOwnProperty(_key)) {
@@ -197,9 +193,9 @@ jsKeyword.fn = jsKeyword.prototype = {
 
         var _tree = this.tree;
         if (typeof arguments[0] === "object") {
-            _argu = arguments[0];
+            var _argu = arguments[0];
         } else {
-            _argu = arguments;
+            var _argu = arguments;
         };
         for (var j = 0; j < _argu.length; j++) {
             var _temp = _argu[j];
